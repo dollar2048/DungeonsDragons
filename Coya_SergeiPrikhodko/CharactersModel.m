@@ -43,22 +43,15 @@ const NSInteger kNumberOfDices = 6;
         character.classType = arc4random_uniform(ClassTypeCount);
 
         character.strength = [self randomCharacteristicValue];
-        character.strengthBonus = [self strengthBonusForCharacter:character];
-
         character.dexterity = [self randomCharacteristicValue];
-        character.dexterityBonus = [self dexterityBonusForCharacter:character];
-
         character.constitution = [self randomCharacteristicValue];
-        character.constitutionBonus = [self constitutionBonusForCharacter:character];
-
         character.intelligence = [self randomCharacteristicValue];
-        character.intelligenceBonus = [self intelligenceBonusForCharacter:character];
-
         character.wisdom = [self randomCharacteristicValue];
-        character.wisdomBonus = [self wisdomBonusForCharacter:character];
-
         character.charisma = [self randomCharacteristicValue];
-        character.charismaBonus = [self charismaBonusForCharacter:character];
+
+        [self addCharacteristicValueBonusesForCharacter:character];
+        [self addRaceBonusesForCharacter:character];
+        [self addClassBonusesForCharacter:character];
 
         [resultArr addObject:character];
     }
@@ -77,46 +70,60 @@ const NSInteger kNumberOfDices = 6;
     return resultValue;
 }
 
-- (NSInteger)strengthBonusForCharacter:(CharacterEntity *)character
+- (void)addCharacteristicValueBonusesForCharacter:(CharacterEntity *)character
 {
-    NSInteger resultBonus = [self bonusForCharacteristicValue:character.strength];
-
-    return resultBonus;
+    character.strengthBonus += [self bonusForCharacteristicValue:character.strength];
+    character.dexterityBonus += [self bonusForCharacteristicValue:character.dexterity];
+    character.constitutionBonus += [self bonusForCharacteristicValue:character.constitution];
+    character.intelligenceBonus += [self bonusForCharacteristicValue:character.intelligence];
+    character.wisdomBonus += [self bonusForCharacteristicValue:character.wisdom];
+    character.charismaBonus += [self bonusForCharacteristicValue:character.charisma];
 }
 
-- (NSInteger)dexterityBonusForCharacter:(CharacterEntity *)character
+- (void)addRaceBonusesForCharacter:(CharacterEntity *)character
 {
-    NSInteger resultBonus = [self bonusForCharacteristicValue:character.dexterity];
-
-    return resultBonus;
+    if (character.raceType == RaceTypeDwarf)
+    {
+        character.strengthBonus += 2;
+        character.constitutionBonus += 2;
+        character.dexterityBonus -= 2;
+        character.charismaBonus -= 2;
+    }
+    else if (character.raceType == RaceTypeElf)
+    {
+        character.strengthBonus -= 2;
+        character.dexterityBonus += 2;
+    }
 }
 
-- (NSInteger)constitutionBonusForCharacter:(CharacterEntity *)character
+- (void)addClassBonusesForCharacter:(CharacterEntity *)character
 {
-    NSInteger resultBonus = [self bonusForCharacteristicValue:character.constitution];
-
-    return resultBonus;
-}
-
-- (NSInteger)intelligenceBonusForCharacter:(CharacterEntity *)character
-{
-    NSInteger resultBonus = [self bonusForCharacteristicValue:character.intelligence];
-
-    return resultBonus;
-}
-
-- (NSInteger)wisdomBonusForCharacter:(CharacterEntity *)character
-{
-    NSInteger resultBonus = [self bonusForCharacteristicValue:character.wisdom];
-
-    return resultBonus;
-}
-
-- (NSInteger)charismaBonusForCharacter:(CharacterEntity *)character
-{
-    NSInteger resultBonus = [self bonusForCharacteristicValue:character.charisma];
-
-    return resultBonus;
+    if (character.classType == ClassTypeWarrior)
+    {
+        if (character.raceType == RaceTypeDwarf)
+        {
+            character.strengthBonus += 3;
+        }
+        else if (character.raceType == RaceTypeHuman)
+        {
+            character.strengthBonus += 2;
+        }
+    }
+    else if (character.classType == ClassTypeWizard)
+    {
+        if (character.raceType == RaceTypeHuman
+            || character.raceType == RaceTypeElf)
+        {
+            character.intelligenceBonus += 1;
+        }
+    }
+    else if (character.classType == ClassTypeRanger)
+    {
+        if (character.raceType == RaceTypeElf)
+        {
+            character.dexterityBonus += 1;
+        }
+    }
 }
 
 - (NSInteger)bonusForCharacteristicValue:(NSInteger)characteristicValue
