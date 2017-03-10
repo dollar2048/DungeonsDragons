@@ -38,7 +38,7 @@ const NSInteger kNumberOfDices = 6;
     for (int i = 0; i < amount; i++)
     {
         CharacterEntity *character = [CharacterEntity new];
-        character.name = @"Name";
+        character.name = [self randomName];
         character.raceType = arc4random_uniform(RaceTypeCount);
         character.classType = arc4random_uniform(ClassTypeCount);
 
@@ -68,6 +68,32 @@ const NSInteger kNumberOfDices = 6;
     }
 
     return resultValue;
+}
+
+- (NSString *)randomName
+{
+    NSArray *names = @[
+        @"Wynyra",
+        @"Torxina",
+        @"Helexisys",
+        @"Keylee",
+        @"Daethyra",
+        @"Liaralei",
+        @"Gilrieth",
+        @"Holasys",
+        @"Envaris",
+        @"Shagella",
+        @"Jordon",
+        @"Carlo",
+        @"Kyree",
+        @"Derk",
+        @"Snowdun",
+        @"Howard",
+        @"Muhammad",
+        @"Park",
+        @"Garlan",
+    ];
+    return names[arc4random_uniform((UInt32)names.count)];
 }
 
 - (void)addCharacteristicValueBonusesForCharacter:(CharacterEntity *)character
