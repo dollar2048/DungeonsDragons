@@ -95,18 +95,11 @@
 			children = (
 				3B75FC4E1E72C60300C33A27 /* AppDelegate.h */,
 				3B75FC4F1E72C60300C33A27 /* AppDelegate.m */,
-				3B75FC731E72E40700C33A27 /* Entity */,
-				3B75FC511E72C60300C33A27 /* CharactersViewController.h */,
-				3B75FC521E72C60300C33A27 /* CharactersViewController.m */,
-				3B75FC771E72F6D400C33A27 /* CharactersModel.h */,
-				3B75FC781E72F6D400C33A27 /* CharactersModel.m */,
 				3B75FC541E72C60300C33A27 /* Main.storyboard */,
-				3B75FC701E72CA0100C33A27 /* CharacterTableViewCell.h */,
-				3B75FC711E72CA0100C33A27 /* CharacterTableViewCell.m */,
-				3B75FC7A1E72FD7600C33A27 /* CharacteristicTableViewCell.h */,
-				3B75FC7B1E72FD7600C33A27 /* CharacteristicTableViewCell.m */,
-				3B75FC571E72C60300C33A27 /* Assets.xcassets */,
 				3B75FC591E72C60300C33A27 /* LaunchScreen.storyboard */,
+				3B75FC731E72E40700C33A27 /* Entity */,
+				3B75FC7E1E736A4700C33A27 /* Characters */,
+				3B75FC571E72C60300C33A27 /* Assets.xcassets */,
 				3B75FC5C1E72C60300C33A27 /* Info.plist */,
 				3B75FC4B1E72C60300C33A27 /* Supporting Files */,
 			);
@@ -137,6 +130,29 @@
 				3B75FC751E72E43600C33A27 /* CharacterEntity.m */,
 			);
 			name = Entity;
+			sourceTree = "<group>";
+		};
+		3B75FC7D1E7369EC00C33A27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B75FC771E72F6D400C33A27 /* CharactersModel.h */,
+				3B75FC781E72F6D400C33A27 /* CharactersModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3B75FC7E1E736A4700C33A27 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				3B75FC7D1E7369EC00C33A27 /* Model */,
+				3B75FC511E72C60300C33A27 /* CharactersViewController.h */,
+				3B75FC521E72C60300C33A27 /* CharactersViewController.m */,
+				3B75FC701E72CA0100C33A27 /* CharacterTableViewCell.h */,
+				3B75FC711E72CA0100C33A27 /* CharacterTableViewCell.m */,
+				3B75FC7A1E72FD7600C33A27 /* CharacteristicTableViewCell.h */,
+				3B75FC7B1E72FD7600C33A27 /* CharacteristicTableViewCell.m */,
+			);
+			name = Characters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
