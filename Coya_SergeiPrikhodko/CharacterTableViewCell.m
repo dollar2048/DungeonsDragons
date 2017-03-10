@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *race;
 @property (weak, nonatomic) IBOutlet UIImageView *avatar;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -25,6 +26,8 @@
 
     self.name.text = character.name;
     self.race.text = [self raceStringForRaceType:character.raceType];
+
+    [self.tableView reloadData];
 }
 
 #pragma mark - Private

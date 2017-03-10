@@ -23,7 +23,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CfU-Ne-swy">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterTableViewCell" rowHeight="140" id="fGg-Zn-p0Z" customClass="CharacterTableViewCell">
@@ -137,6 +137,7 @@
                                             <outlet property="avatar" destination="Bcb-JF-9Qo" id="Djn-cK-s3l"/>
                                             <outlet property="name" destination="EYC-p8-W4O" id="bJG-bo-TYx"/>
                                             <outlet property="race" destination="ebF-A8-Rql" id="xib-97-xZW"/>
+                                            <outlet property="tableView" destination="obd-xq-ZYO" id="ygW-BD-emA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -156,7 +157,6 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="CfU-Ne-swy" secondAttribute="trailing" id="4y7-Ir-UGT"/>
                             <constraint firstAttribute="trailing" secondItem="WWI-bG-YAg" secondAttribute="trailing" id="Hrr-LV-aaF"/>
