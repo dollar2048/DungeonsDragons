@@ -12,12 +12,14 @@ typedef NS_ENUM(NSUInteger, RaceType) {
     RaceTypeDwarf,
     RaceTypeElf,
     RaceTypeHuman,
+    RaceTypeCount,
 };
 
 typedef NS_ENUM(NSUInteger, ClassType) {
     ClassTypeWarrior,
     ClassTypeWizard,
     ClassTypeRanger,
+    ClassTypeCount,
 };
 
 @interface CharacterEntity : NSObject

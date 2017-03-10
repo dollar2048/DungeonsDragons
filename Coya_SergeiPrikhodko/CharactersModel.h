@@ -6,8 +6,11 @@
 //  Copyright © 2017 Sergei Prikhodko. All rights reserved.
 //
 
+#import "CharacterEntity.h"
 #import <Foundation/Foundation.h>
 
 @interface CharactersModel : NSObject
+
+@property (strong, nonatomic, readonly) NSArray<CharacterEntity *> *characters;
 
 @end
