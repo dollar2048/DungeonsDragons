@@ -11,6 +11,8 @@
 
 @interface CharactersModel : NSObject
 
+- (void)refreshData;
+
 @property (strong, nonatomic, readonly) NSArray<CharacterEntity *> *characters;
 
 @end

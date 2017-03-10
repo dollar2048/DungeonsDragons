@@ -20,6 +20,11 @@ const NSInteger kNumberOfDices = 6;
 
 @implementation CharactersModel
 
+- (void)refreshData
+{
+    self.characters = nil;
+}
+
 - (NSArray<CharacterEntity *> *)characters
 {
     if (!_characters)

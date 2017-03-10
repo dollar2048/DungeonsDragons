@@ -22,8 +22,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
+    self.tableView.refreshControl = refreshControl;
+
     self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
     self.model = [CharactersModel new];
+}
+
+#pragma mark - Private
+
+- (void)refreshData
+{
+    [self.tableView.refreshControl endRefreshing];
+    [self.model refreshData];
+    [self.tableView reloadData];
 }
 
 #pragma mark UITableViewDataSource
