@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		3B75FC4D1E72C60300C33A27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC4C1E72C60300C33A27 /* main.m */; };
 		3B75FC501E72C60300C33A27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC4F1E72C60300C33A27 /* AppDelegate.m */; };
-		3B75FC531E72C60300C33A27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC521E72C60300C33A27 /* ViewController.m */; };
+		3B75FC531E72C60300C33A27 /* CharactersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC521E72C60300C33A27 /* CharactersViewController.m */; };
 		3B75FC561E72C60300C33A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B75FC541E72C60300C33A27 /* Main.storyboard */; };
 		3B75FC581E72C60300C33A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B75FC571E72C60300C33A27 /* Assets.xcassets */; };
 		3B75FC5B1E72C60300C33A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B75FC591E72C60300C33A27 /* LaunchScreen.storyboard */; };
 		3B75FC661E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC651E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.m */; };
+		3B75FC721E72CA0100C33A27 /* CharacterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC711E72CA0100C33A27 /* CharacterTableViewCell.m */; };
+		3B75FC761E72E43600C33A27 /* CharacterEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC751E72E43600C33A27 /* CharacterEntity.m */; };
+		3B75FC791E72F6D400C33A27 /* CharactersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC781E72F6D400C33A27 /* CharactersModel.m */; };
+		3B75FC7C1E72FD7600C33A27 /* CharacteristicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC7B1E72FD7600C33A27 /* CharacteristicTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +35,8 @@
 		3B75FC4C1E72C60300C33A27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B75FC4E1E72C60300C33A27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B75FC4F1E72C60300C33A27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3B75FC511E72C60300C33A27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3B75FC521E72C60300C33A27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3B75FC511E72C60300C33A27 /* CharactersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharactersViewController.h; sourceTree = "<group>"; };
+		3B75FC521E72C60300C33A27 /* CharactersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharactersViewController.m; sourceTree = "<group>"; };
 		3B75FC551E72C60300C33A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B75FC571E72C60300C33A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B75FC5A1E72C60300C33A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +44,14 @@
 		3B75FC611E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Coya_SergeiPrikhodkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B75FC651E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coya_SergeiPrikhodkoTests.m; sourceTree = "<group>"; };
 		3B75FC671E72C60300C33A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B75FC701E72CA0100C33A27 /* CharacterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTableViewCell.h; sourceTree = "<group>"; };
+		3B75FC711E72CA0100C33A27 /* CharacterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTableViewCell.m; sourceTree = "<group>"; };
+		3B75FC741E72E43600C33A27 /* CharacterEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterEntity.h; sourceTree = "<group>"; };
+		3B75FC751E72E43600C33A27 /* CharacterEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterEntity.m; sourceTree = "<group>"; };
+		3B75FC771E72F6D400C33A27 /* CharactersModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharactersModel.h; sourceTree = "<group>"; };
+		3B75FC781E72F6D400C33A27 /* CharactersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharactersModel.m; sourceTree = "<group>"; };
+		3B75FC7A1E72FD7600C33A27 /* CharacteristicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacteristicTableViewCell.h; sourceTree = "<group>"; };
+		3B75FC7B1E72FD7600C33A27 /* CharacteristicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacteristicTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +95,16 @@
 			children = (
 				3B75FC4E1E72C60300C33A27 /* AppDelegate.h */,
 				3B75FC4F1E72C60300C33A27 /* AppDelegate.m */,
-				3B75FC511E72C60300C33A27 /* ViewController.h */,
-				3B75FC521E72C60300C33A27 /* ViewController.m */,
+				3B75FC731E72E40700C33A27 /* Entity */,
+				3B75FC511E72C60300C33A27 /* CharactersViewController.h */,
+				3B75FC521E72C60300C33A27 /* CharactersViewController.m */,
+				3B75FC771E72F6D400C33A27 /* CharactersModel.h */,
+				3B75FC781E72F6D400C33A27 /* CharactersModel.m */,
 				3B75FC541E72C60300C33A27 /* Main.storyboard */,
+				3B75FC701E72CA0100C33A27 /* CharacterTableViewCell.h */,
+				3B75FC711E72CA0100C33A27 /* CharacterTableViewCell.m */,
+				3B75FC7A1E72FD7600C33A27 /* CharacteristicTableViewCell.h */,
+				3B75FC7B1E72FD7600C33A27 /* CharacteristicTableViewCell.m */,
 				3B75FC571E72C60300C33A27 /* Assets.xcassets */,
 				3B75FC591E72C60300C33A27 /* LaunchScreen.storyboard */,
 				3B75FC5C1E72C60300C33A27 /* Info.plist */,
@@ -109,6 +128,15 @@
 				3B75FC671E72C60300C33A27 /* Info.plist */,
 			);
 			path = Coya_SergeiPrikhodkoTests;
+			sourceTree = "<group>";
+		};
+		3B75FC731E72E40700C33A27 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3B75FC741E72E43600C33A27 /* CharacterEntity.h */,
+				3B75FC751E72E43600C33A27 /* CharacterEntity.m */,
+			);
+			name = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B75FC531E72C60300C33A27 /* ViewController.m in Sources */,
+				3B75FC531E72C60300C33A27 /* CharactersViewController.m in Sources */,
+				3B75FC791E72F6D400C33A27 /* CharactersModel.m in Sources */,
 				3B75FC501E72C60300C33A27 /* AppDelegate.m in Sources */,
 				3B75FC4D1E72C60300C33A27 /* main.m in Sources */,
+				3B75FC761E72E43600C33A27 /* CharacterEntity.m in Sources */,
+				3B75FC7C1E72FD7600C33A27 /* CharacteristicTableViewCell.m in Sources */,
+				3B75FC721E72CA0100C33A27 /* CharacterTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
