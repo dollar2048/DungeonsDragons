@@ -25,12 +25,28 @@
     self.character = character;
 
     self.name.text = character.name;
+    self.avatar.image = [self avatarForClassType:character.classType];
     self.race.text = [self raceStringForRaceType:character.raceType];
 
     [self.tableView reloadData];
 }
 
 #pragma mark - Private
+
+- (UIImage *)avatarForClassType:(ClassType)classType
+{
+    switch (classType)
+    {
+        case ClassTypeRanger:
+            return [UIImage imageNamed:@"ranger"];
+        case ClassTypeWizard:
+            return [UIImage imageNamed:@"wizard"];
+        case ClassTypeWarrior:
+            return [UIImage imageNamed:@"warrior"];
+        case ClassTypeCount:
+            return nil;
+    }
+}
 
 - (NSString *)raceStringForRaceType:(RaceType)raceType
 {
