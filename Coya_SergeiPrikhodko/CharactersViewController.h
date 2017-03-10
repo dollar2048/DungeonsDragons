@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CharactersViewController.h
 //  Coya_SergeiPrikhodko
 //
 //  Created by Sergei Prikhodko on 10/03/17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CharactersViewController : UIViewController
 
 
 @end
