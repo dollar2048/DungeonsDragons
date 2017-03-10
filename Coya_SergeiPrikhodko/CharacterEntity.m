@@ -10,4 +10,13 @@
 
 @implementation CharacterEntity
 
+- (NSInteger)power
+{
+    return self.strengthBonus
+           + self.dexterityBonus
+           + self.constitutionBonus
+           + self.intelligenceBonus
+           + self.wisdomBonus
+           + self.charismaBonus;
+}
 @end

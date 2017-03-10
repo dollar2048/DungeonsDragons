@@ -25,6 +25,23 @@ const NSInteger kNumberOfDices = 6;
     if (!_characters)
     {
         self.characters = [self generateCharacterListFor:kCharactersAmount];
+        self.characters = [self.characters sortedArrayUsingComparator:^NSComparisonResult(CharacterEntity *character1, CharacterEntity *character2) {
+
+          NSInteger power1 = character1.power;
+          NSInteger power2 = character2.power;
+          if (power1 > power2)
+          {
+              return NSOrderedAscending;
+          }
+          else if (power1 < power2)
+          {
+              return NSOrderedDescending;
+          }
+          else
+          {
+              return NSOrderedSame;
+          }
+        }];
     }
     return _characters;
 }

@@ -41,4 +41,6 @@ typedef NS_ENUM(NSUInteger, ClassType) {
 @property (nonatomic) NSInteger charisma;
 @property (nonatomic) NSInteger charismaBonus;
 
+@property (nonatomic, readonly) NSInteger power;
+
 @end
