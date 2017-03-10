@@ -29,10 +29,16 @@ typedef NS_ENUM(NSUInteger, ClassType) {
 @property (nonatomic) ClassType classType;
 
 @property (nonatomic) NSInteger strength;
+@property (nonatomic) NSInteger strengthBonus;
 @property (nonatomic) NSInteger dexterity;
+@property (nonatomic) NSInteger dexterityBonus;
 @property (nonatomic) NSInteger constitution;
+@property (nonatomic) NSInteger constitutionBonus;
 @property (nonatomic) NSInteger intelligence;
+@property (nonatomic) NSInteger intelligenceBonus;
 @property (nonatomic) NSInteger wisdom;
+@property (nonatomic) NSInteger wisdomBonus;
 @property (nonatomic) NSInteger charisma;
+@property (nonatomic) NSInteger charismaBonus;
 
 @end

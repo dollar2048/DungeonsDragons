@@ -59,22 +59,22 @@
     switch (indexPath.row)
     {
         case 0:
-            [cell showName:@"Str" value:self.character.strength bonus:0];
+            [cell showName:@"Str" value:self.character.strength bonus:self.character.strengthBonus];
             break;
         case 1:
-            [cell showName:@"Dxf" value:self.character.dexterity bonus:0];
+            [cell showName:@"Dxf" value:self.character.dexterity bonus:self.character.dexterityBonus];
             break;
         case 2:
-            [cell showName:@"Con" value:self.character.constitution bonus:0];
+            [cell showName:@"Con" value:self.character.constitution bonus:self.character.constitutionBonus];
             break;
         case 3:
-            [cell showName:@"Int" value:self.character.intelligence bonus:0];
+            [cell showName:@"Int" value:self.character.intelligence bonus:self.character.intelligenceBonus];
             break;
         case 4:
-            [cell showName:@"Wis" value:self.character.wisdom bonus:0];
+            [cell showName:@"Wis" value:self.character.wisdom bonus:self.character.wisdomBonus];
             break;
         case 5:
-            [cell showName:@"Cha" value:self.character.charisma bonus:0];
+            [cell showName:@"Cha" value:self.character.charisma bonus:self.character.charismaBonus];
             break;
         default:
             [cell showName:@"0" value:0 bonus:0];

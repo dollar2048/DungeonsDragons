@@ -27,7 +27,7 @@
 {
     self.name.text = name;
     self.value.text = [NSString stringWithFormat:@"%ld", (long)value];
-    self.bonus.text = [NSString stringWithFormat:@"%ld", (long)bonus];
+    self.bonus.text = [NSString stringWithFormat:@"%+ld", (long)bonus];
 }
 
 @end

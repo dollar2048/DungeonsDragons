@@ -41,12 +41,24 @@ const NSInteger kNumberOfDices = 6;
         character.name = @"Name";
         character.raceType = arc4random_uniform(RaceTypeCount);
         character.classType = arc4random_uniform(ClassTypeCount);
+
         character.strength = [self randomCharacteristicValue];
+        character.strengthBonus = [self strengthBonusForCharacter:character];
+
         character.dexterity = [self randomCharacteristicValue];
+        character.dexterityBonus = [self dexterityBonusForCharacter:character];
+
         character.constitution = [self randomCharacteristicValue];
+        character.constitutionBonus = [self constitutionBonusForCharacter:character];
+
         character.intelligence = [self randomCharacteristicValue];
+        character.intelligenceBonus = [self intelligenceBonusForCharacter:character];
+
         character.wisdom = [self randomCharacteristicValue];
+        character.wisdomBonus = [self wisdomBonusForCharacter:character];
+
         character.charisma = [self randomCharacteristicValue];
+        character.charismaBonus = [self charismaBonusForCharacter:character];
 
         [resultArr addObject:character];
     }
@@ -63,6 +75,54 @@ const NSInteger kNumberOfDices = 6;
     }
 
     return resultValue;
+}
+
+- (NSInteger)strengthBonusForCharacter:(CharacterEntity *)character
+{
+    NSInteger resultBonus = [self bonusForCharacteristicValue:character.strength];
+
+    return resultBonus;
+}
+
+- (NSInteger)dexterityBonusForCharacter:(CharacterEntity *)character
+{
+    NSInteger resultBonus = [self bonusForCharacteristicValue:character.dexterity];
+
+    return resultBonus;
+}
+
+- (NSInteger)constitutionBonusForCharacter:(CharacterEntity *)character
+{
+    NSInteger resultBonus = [self bonusForCharacteristicValue:character.constitution];
+
+    return resultBonus;
+}
+
+- (NSInteger)intelligenceBonusForCharacter:(CharacterEntity *)character
+{
+    NSInteger resultBonus = [self bonusForCharacteristicValue:character.intelligence];
+
+    return resultBonus;
+}
+
+- (NSInteger)wisdomBonusForCharacter:(CharacterEntity *)character
+{
+    NSInteger resultBonus = [self bonusForCharacteristicValue:character.wisdom];
+
+    return resultBonus;
+}
+
+- (NSInteger)charismaBonusForCharacter:(CharacterEntity *)character
+{
+    NSInteger resultBonus = [self bonusForCharacteristicValue:character.charisma];
+
+    return resultBonus;
+}
+
+- (NSInteger)bonusForCharacteristicValue:(NSInteger)characteristicValue
+{
+    NSInteger resultBonus = (characteristicValue - kNumberOfRollings) / 2 - 3;
+    return resultBonus;
 }
 
 @end
