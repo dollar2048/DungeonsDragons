@@ -17,7 +17,11 @@ These class bonus rules are used:
 - Rangers: who get a +2 bonus in Dexterity if the race is Elf.
 
 These characteristics bonus rules are used:
-Characteristic 16-17  14-15   12-13  10-11  8-9   6-7  4-5
-
-Bonus          +3      +2       +1    +0     -1   -2  -3
+16-17 -- +3
+14-15 -- +2в
+12-13 -- +1
+10-11 -- +0
+8-9 -- -1
+6-7 -- -2
+4-5 -- -3
 * Values below 3 and above 18 can be inferred following the same rule.
