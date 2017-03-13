@@ -18,5 +18,6 @@ These class bonus rules are used:
 
 These characteristics bonus rules are used:
 Characteristic 16-17  14-15   12-13  10-11  8-9   6-7  4-5
+
 Bonus          +3      +2       +1    +0     -1   -2  -3
 * Values below 3 and above 18 can be inferred following the same rule.
