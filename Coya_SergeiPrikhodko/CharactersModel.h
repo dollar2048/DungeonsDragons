@@ -11,8 +11,14 @@
 
 @interface CharactersModel : NSObject
 
+/**
+ * @brief Сlear characters. So refresh UI after it.
+ */
 - (void)refreshData;
 
-@property (strong, nonatomic, readonly) NSArray<CharacterEntity *> *characters;
+/**
+ * @brief Lazy initialized array of characters
+ */
+- (NSArray<CharacterEntity *> *)characters;
 
 @end

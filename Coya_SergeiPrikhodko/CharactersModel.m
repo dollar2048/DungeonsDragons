@@ -14,7 +14,7 @@ const NSInteger kNumberOfDices = 6;
 
 @interface CharactersModel ()
 
-@property (strong, nonatomic, readwrite) NSArray<CharacterEntity *> *characters;
+@property (strong, nonatomic) NSArray<CharacterEntity *> *characters;
 
 @end
 
