@@ -24,4 +24,8 @@ These characteristics bonus rules are used:
 8-9 -- -1;
 6-7 -- -2;
 4-5 -- -3
-* Values below 3 and above 18 can be inferred following the same rule.
+Values below 3 and above 18 can be inferred following the same rule.
+
+You can install the application by downloading file via link:
+https://rink.hockeyapp.net/apps/17ca729dd1ca43edaf3addb9694b9617
+(then you have to trust my developer sertificate in you iphone settings/general/profiles/enterprise app)
