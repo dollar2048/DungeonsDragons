@@ -6,34 +6,91 @@
 //  Copyright © 2017 Sergei Prikhodko. All rights reserved.
 //
 
+#import "CharactersModel.h"
 #import <XCTest/XCTest.h>
+@interface CharactersModel ()
+- (void)addCharacteristicValueBonusesForCharacter:(CharacterEntity *)character;
+- (void)addRaceBonusesForCharacter:(CharacterEntity *)character;
+- (void)addClassBonusesForCharacter:(CharacterEntity *)character;
+@end
 
 @interface Coya_SergeiPrikhodkoTests : XCTestCase
-
+@property (nonatomic, strong) CharactersModel *model;
 @end
 
 @implementation Coya_SergeiPrikhodkoTests
 
-- (void)setUp {
+- (void)setUp
+{
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.model = [CharactersModel new];
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)tearDown
+{
+    self.model = nil;
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)test_addCharacteristicValueBonuses
+{
+    CharacterEntity *character = [CharacterEntity new];
+    character.strength = 4;
+    character.dexterity = 7;
+    character.constitution = 10;
+    character.intelligence = 11;
+    character.wisdom = 17;
+    character.charisma = 24;
+
+    [self.model addCharacteristicValueBonusesForCharacter:character];
+    XCTAssert(character.strengthBonus == -3, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.dexterityBonus == -2, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.constitutionBonus == 0, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.intelligenceBonus == 0, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.wisdomBonus == 3, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.charismaBonus == 7, @"Wrong addCharacteristicValueBonusesForCharacter");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)test_addRaceBonuses_Dwarf
+{
+    CharacterEntity *character = [CharacterEntity new];
+    character.raceType = RaceTypeDwarf;
+
+    [self.model addRaceBonusesForCharacter:character];
+    XCTAssert(character.strengthBonus == 2, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.dexterityBonus == -2, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.constitutionBonus == 2, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.intelligenceBonus == 0, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.wisdomBonus == 0, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.charismaBonus == -2, @"Wrong addCharacteristicValueBonusesForCharacter");
+
+    character.charisma = 24;
+
+    [self.model addCharacteristicValueBonusesForCharacter:character];
+    XCTAssert(character.charismaBonus == 5, @"Wrong addCharacteristicValueBonusesForCharacter");
+}
+
+- (void)test_addClassBonuses_Dwarf_Warrior
+{
+    CharacterEntity *character = [CharacterEntity new];
+    character.classType = ClassTypeWarrior;
+    character.raceType = RaceTypeDwarf;
+
+    [self.model addRaceBonusesForCharacter:character];
+    [self.model addClassBonusesForCharacter:character];
+    XCTAssert(character.strengthBonus == 5, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.dexterityBonus == -2, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.constitutionBonus == 2, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.intelligenceBonus == 0, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.wisdomBonus == 0, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.charismaBonus == -2, @"Wrong addCharacteristicValueBonusesForCharacter");
+
+    character.strength = 24;
+    character.charisma = 24;
+
+    [self.model addCharacteristicValueBonusesForCharacter:character];
+    XCTAssert(character.strengthBonus == 12, @"Wrong addCharacteristicValueBonusesForCharacter");
+    XCTAssert(character.charismaBonus == 5, @"Wrong addCharacteristicValueBonusesForCharacter");
 }
 
 @end
