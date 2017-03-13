@@ -16,16 +16,16 @@ These class bonus rules are used:
 - Wizards: who get a +1 bonus in Intelligence if the race is Elf or Human.
 - Rangers: who get a +2 bonus in Dexterity if the race is Elf.
 
-These characteristics bonus rules are used:
-16-17 -- +3;
-14-15 -- +2;
-12-13 -- +1;
-10-11 -- +0;
-8-9 -- -1;
-6-7 -- -2;
-4-5 -- -3
+These characteristics bonus rules are used:<br />
+16-17 -- +3;<br />
+14-15 -- +2;<br />
+12-13 -- +1;<br />
+10-11 -- +0;<br />
+8-9 -- -1;<br />
+6-7 -- -2;<br />
+4-5 -- -3<br />
 Values below 3 and above 18 can be inferred following the same rule.
 
 You can install the application by downloading file via link:
-https://rink.hockeyapp.net/apps/17ca729dd1ca43edaf3addb9694b9617
+https://rink.hockeyapp.net/apps/17ca729dd1ca43edaf3addb9694b9617<br />
 (then you have to trust my developer sertificate in you iphone settings/general/profiles/enterprise app)
