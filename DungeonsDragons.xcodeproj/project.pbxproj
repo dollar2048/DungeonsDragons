@@ -13,7 +13,7 @@
 		3B75FC561E72C60300C33A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B75FC541E72C60300C33A27 /* Main.storyboard */; };
 		3B75FC581E72C60300C33A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B75FC571E72C60300C33A27 /* Assets.xcassets */; };
 		3B75FC5B1E72C60300C33A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B75FC591E72C60300C33A27 /* LaunchScreen.storyboard */; };
-		3B75FC661E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC651E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.m */; };
+		3B75FC661E72C60300C33A27 /* DungeonsDragonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC651E72C60300C33A27 /* DungeonsDragonsTests.m */; };
 		3B75FC721E72CA0100C33A27 /* CharacterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC711E72CA0100C33A27 /* CharacterTableViewCell.m */; };
 		3B75FC761E72E43600C33A27 /* CharacterEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC751E72E43600C33A27 /* CharacterEntity.m */; };
 		3B75FC791E72F6D400C33A27 /* CharactersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC781E72F6D400C33A27 /* CharactersModel.m */; };
@@ -32,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B75FC481E72C60300C33A27 /* Coya_SergeiPrikhodko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coya_SergeiPrikhodko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B75FC481E72C60300C33A27 /* D&D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&D.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B75FC4C1E72C60300C33A27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B75FC4E1E72C60300C33A27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B75FC4F1E72C60300C33A27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,8 +42,8 @@
 		3B75FC571E72C60300C33A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B75FC5A1E72C60300C33A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B75FC5C1E72C60300C33A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B75FC611E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Coya_SergeiPrikhodkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B75FC651E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coya_SergeiPrikhodkoTests.m; sourceTree = "<group>"; };
+		3B75FC611E72C60300C33A27 /* DungeonsDragonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DungeonsDragonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B75FC651E72C60300C33A27 /* DungeonsDragonsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonsDragonsTests.m; sourceTree = "<group>"; };
 		3B75FC671E72C60300C33A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B75FC701E72CA0100C33A27 /* CharacterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTableViewCell.h; sourceTree = "<group>"; };
 		3B75FC711E72CA0100C33A27 /* CharacterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTableViewCell.m; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				95AE931D2784C78300EAF0E4 /* README.md */,
-				3B75FC4A1E72C60300C33A27 /* Coya_SergeiPrikhodko */,
-				3B75FC641E72C60300C33A27 /* Coya_SergeiPrikhodkoTests */,
+				3B75FC4A1E72C60300C33A27 /* DungeonsDragons */,
+				3B75FC641E72C60300C33A27 /* DungeonsDragonsTests */,
 				3B75FC491E72C60300C33A27 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,43 +87,35 @@
 		3B75FC491E72C60300C33A27 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B75FC481E72C60300C33A27 /* Coya_SergeiPrikhodko.app */,
-				3B75FC611E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.xctest */,
+				3B75FC481E72C60300C33A27 /* D&D.app */,
+				3B75FC611E72C60300C33A27 /* DungeonsDragonsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B75FC4A1E72C60300C33A27 /* Coya_SergeiPrikhodko */ = {
+		3B75FC4A1E72C60300C33A27 /* DungeonsDragons */ = {
 			isa = PBXGroup;
 			children = (
+				3B75FC4C1E72C60300C33A27 /* main.m */,
 				3B75FC4E1E72C60300C33A27 /* AppDelegate.h */,
 				3B75FC4F1E72C60300C33A27 /* AppDelegate.m */,
 				3B75FC541E72C60300C33A27 /* Main.storyboard */,
 				3B75FC591E72C60300C33A27 /* LaunchScreen.storyboard */,
-				3B75FC731E72E40700C33A27 /* Entity */,
-				3B75FC7E1E736A4700C33A27 /* Characters */,
 				3B75FC571E72C60300C33A27 /* Assets.xcassets */,
 				3B75FC5C1E72C60300C33A27 /* Info.plist */,
-				3B75FC4B1E72C60300C33A27 /* Supporting Files */,
+				3B75FC731E72E40700C33A27 /* Entity */,
+				3B75FC7E1E736A4700C33A27 /* Characters */,
 			);
-			path = Coya_SergeiPrikhodko;
+			path = DungeonsDragons;
 			sourceTree = "<group>";
 		};
-		3B75FC4B1E72C60300C33A27 /* Supporting Files */ = {
+		3B75FC641E72C60300C33A27 /* DungeonsDragonsTests */ = {
 			isa = PBXGroup;
 			children = (
-				3B75FC4C1E72C60300C33A27 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3B75FC641E72C60300C33A27 /* Coya_SergeiPrikhodkoTests */ = {
-			isa = PBXGroup;
-			children = (
-				3B75FC651E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.m */,
+				3B75FC651E72C60300C33A27 /* DungeonsDragonsTests.m */,
 				3B75FC671E72C60300C33A27 /* Info.plist */,
 			);
-			path = Coya_SergeiPrikhodkoTests;
+			path = DungeonsDragonsTests;
 			sourceTree = "<group>";
 		};
 		3B75FC731E72E40700C33A27 /* Entity */ = {
@@ -161,9 +153,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B75FC471E72C60200C33A27 /* Coya_SergeiPrikhodko */ = {
+		3B75FC471E72C60200C33A27 /* DungeonsDragons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B75FC6A1E72C60300C33A27 /* Build configuration list for PBXNativeTarget "Coya_SergeiPrikhodko" */;
+			buildConfigurationList = 3B75FC6A1E72C60300C33A27 /* Build configuration list for PBXNativeTarget "DungeonsDragons" */;
 			buildPhases = (
 				3B75FC441E72C60200C33A27 /* Sources */,
 				3B75FC451E72C60200C33A27 /* Frameworks */,
@@ -173,14 +165,14 @@
 			);
 			dependencies = (
 			);
-			name = Coya_SergeiPrikhodko;
+			name = DungeonsDragons;
 			productName = Coya_SergeiPrikhodko;
-			productReference = 3B75FC481E72C60300C33A27 /* Coya_SergeiPrikhodko.app */;
+			productReference = 3B75FC481E72C60300C33A27 /* D&D.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3B75FC601E72C60300C33A27 /* Coya_SergeiPrikhodkoTests */ = {
+		3B75FC601E72C60300C33A27 /* DungeonsDragonsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B75FC6D1E72C60300C33A27 /* Build configuration list for PBXNativeTarget "Coya_SergeiPrikhodkoTests" */;
+			buildConfigurationList = 3B75FC6D1E72C60300C33A27 /* Build configuration list for PBXNativeTarget "DungeonsDragonsTests" */;
 			buildPhases = (
 				3B75FC5D1E72C60300C33A27 /* Sources */,
 				3B75FC5E1E72C60300C33A27 /* Frameworks */,
@@ -191,9 +183,9 @@
 			dependencies = (
 				3B75FC631E72C60300C33A27 /* PBXTargetDependency */,
 			);
-			name = Coya_SergeiPrikhodkoTests;
+			name = DungeonsDragonsTests;
 			productName = Coya_SergeiPrikhodkoTests;
-			productReference = 3B75FC611E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.xctest */;
+			productReference = 3B75FC611E72C60300C33A27 /* DungeonsDragonsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -207,18 +199,16 @@
 				TargetAttributes = {
 					3B75FC471E72C60200C33A27 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = V6SAYVH4NK;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					3B75FC601E72C60300C33A27 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BXW7XP3WXJ;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 3B75FC471E72C60200C33A27;
 					};
 				};
 			};
-			buildConfigurationList = 3B75FC431E72C60200C33A27 /* Build configuration list for PBXProject "Coya_SergeiPrikhodko" */;
+			buildConfigurationList = 3B75FC431E72C60200C33A27 /* Build configuration list for PBXProject "DungeonsDragons" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,8 +222,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B75FC471E72C60200C33A27 /* Coya_SergeiPrikhodko */,
-				3B75FC601E72C60300C33A27 /* Coya_SergeiPrikhodkoTests */,
+				3B75FC471E72C60200C33A27 /* DungeonsDragons */,
+				3B75FC601E72C60300C33A27 /* DungeonsDragonsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B75FC661E72C60300C33A27 /* Coya_SergeiPrikhodkoTests.m in Sources */,
+				3B75FC661E72C60300C33A27 /* DungeonsDragonsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +277,7 @@
 /* Begin PBXTargetDependency section */
 		3B75FC631E72C60300C33A27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3B75FC471E72C60200C33A27 /* Coya_SergeiPrikhodko */;
+			target = 3B75FC471E72C60200C33A27 /* DungeonsDragons */;
 			targetProxy = 3B75FC621E72C60300C33A27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -352,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -394,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -406,11 +396,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V6SAYVH4NK;
-				INFOPLIST_FILE = Coya_SergeiPrikhodko/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DungeonsDragons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dollar2048.test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = dollar2048.DungeonsDragons;
+				PRODUCT_NAME = "D&D";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -418,11 +410,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V6SAYVH4NK;
-				INFOPLIST_FILE = Coya_SergeiPrikhodko/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DungeonsDragons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dollar2048.test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = dollar2048.DungeonsDragons;
+				PRODUCT_NAME = "D&D";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -430,12 +424,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = BXW7XP3WXJ;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Coya_SergeiPrikhodkoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Coya-SergeiPrikhodkoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coya_SergeiPrikhodko.app/Coya_SergeiPrikhodko";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DungeonsDragons.app/DungeonsDragons";
 			};
 			name = Debug;
 		};
@@ -443,19 +442,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = BXW7XP3WXJ;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Coya_SergeiPrikhodkoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Coya-SergeiPrikhodkoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coya_SergeiPrikhodko.app/Coya_SergeiPrikhodko";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DungeonsDragons.app/DungeonsDragons";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B75FC431E72C60200C33A27 /* Build configuration list for PBXProject "Coya_SergeiPrikhodko" */ = {
+		3B75FC431E72C60200C33A27 /* Build configuration list for PBXProject "DungeonsDragons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B75FC681E72C60300C33A27 /* Debug */,
@@ -464,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B75FC6A1E72C60300C33A27 /* Build configuration list for PBXNativeTarget "Coya_SergeiPrikhodko" */ = {
+		3B75FC6A1E72C60300C33A27 /* Build configuration list for PBXNativeTarget "DungeonsDragons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B75FC6B1E72C60300C33A27 /* Debug */,
@@ -473,7 +477,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B75FC6D1E72C60300C33A27 /* Build configuration list for PBXNativeTarget "Coya_SergeiPrikhodkoTests" */ = {
+		3B75FC6D1E72C60300C33A27 /* Build configuration list for PBXNativeTarget "DungeonsDragonsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B75FC6E1E72C60300C33A27 /* Debug */,

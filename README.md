@@ -24,3 +24,5 @@ Autogenerates 100 characters by rolling 4 6-faces dices:
 - 6-7 — -2
 - 4-5 — -3
 - Values below 3 and above 18 can be inferred following the same rule.
+
+<img src="ScreenShot_iPhone_13.png" height="500">￼

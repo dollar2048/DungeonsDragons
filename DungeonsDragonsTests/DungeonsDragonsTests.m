@@ -1,6 +1,6 @@
 //
-//  Coya_SergeiPrikhodkoTests.m
-//  Coya_SergeiPrikhodkoTests
+//  DungeonsDragonsTests.m
+//  DungeonsDragonsTests
 //
 //  Created by Sergei Prikhodko on 10/03/17.
 //  Copyright © 2017 Sergei Prikhodko. All rights reserved.
@@ -14,11 +14,11 @@
 - (void)addClassBonusesForCharacter:(CharacterEntity *)character;
 @end
 
-@interface Coya_SergeiPrikhodkoTests : XCTestCase
+@interface DungeonsDragonsTests : XCTestCase
 @property (nonatomic, strong) CharactersModel *model;
 @end
 
-@implementation Coya_SergeiPrikhodkoTests
+@implementation DungeonsDragonsTests
 
 - (void)setUp
 {
