@@ -18,6 +18,7 @@
 		3B75FC761E72E43600C33A27 /* CharacterEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC751E72E43600C33A27 /* CharacterEntity.m */; };
 		3B75FC791E72F6D400C33A27 /* CharactersModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC781E72F6D400C33A27 /* CharactersModel.m */; };
 		3B75FC7C1E72FD7600C33A27 /* CharacteristicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B75FC7B1E72FD7600C33A27 /* CharacteristicTableViewCell.m */; };
+		95AE931E2784C78300EAF0E4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 95AE931D2784C78300EAF0E4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		3B75FC781E72F6D400C33A27 /* CharactersModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharactersModel.m; sourceTree = "<group>"; };
 		3B75FC7A1E72FD7600C33A27 /* CharacteristicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacteristicTableViewCell.h; sourceTree = "<group>"; };
 		3B75FC7B1E72FD7600C33A27 /* CharacteristicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacteristicTableViewCell.m; sourceTree = "<group>"; };
+		95AE931D2784C78300EAF0E4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		3B75FC3F1E72C60200C33A27 = {
 			isa = PBXGroup;
 			children = (
+				95AE931D2784C78300EAF0E4 /* README.md */,
 				3B75FC4A1E72C60300C33A27 /* Coya_SergeiPrikhodko */,
 				3B75FC641E72C60300C33A27 /* Coya_SergeiPrikhodkoTests */,
 				3B75FC491E72C60300C33A27 /* Products */,
@@ -220,6 +223,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -241,6 +245,7 @@
 			files = (
 				3B75FC5B1E72C60300C33A27 /* LaunchScreen.storyboard in Resources */,
 				3B75FC581E72C60300C33A27 /* Assets.xcassets in Resources */,
+				95AE931E2784C78300EAF0E4 /* README.md in Resources */,
 				3B75FC561E72C60300C33A27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
